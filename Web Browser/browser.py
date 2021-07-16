@@ -18,7 +18,7 @@ class MainWindow(QMainWindow):
         self.addToolBar(nav)
 
         home_btn = QAction(QIcon('home-icon.png'), 'Click to go home', self)
-        home_btn.triggered.connect(self.browser.back)
+        home_btn.triggered.connect(self.home)
         nav.addAction(home_btn)
 
         back_btn = QAction(QIcon('back-icon.png'), 'Click to go back', self)
